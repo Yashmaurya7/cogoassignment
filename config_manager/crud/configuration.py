@@ -12,7 +12,7 @@ async def create_configuration(config: ConfigurationCreate):
     await database.execute(query)
 
 async def get_configuration(country_code: str):
-    query = select([configuration]).where(configuration.country_code == country_code)
+    query = select(configuration).where(configuration.c.country_code == country_code)
     return await database.fetch_one(query)
 # async def get_configuration(country_code: str):
 #     query = select([configuration.c.country_code, configuration.c.requirements]).where(configuration.c.country_code == country_code)
