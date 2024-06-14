@@ -13,11 +13,4 @@ class ConfigurationUpdate(BaseModel):
 
 class Configuration(ConfigurationBase):
     class Config:
-        # orm_mode = True
-        from_attributes = True
-class ConfigurationResponse(ConfigurationBase):
-    country_code: str
-    requirements: str
-
-    class Config:
         from_attributes = True
