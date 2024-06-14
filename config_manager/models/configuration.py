@@ -1,4 +1,5 @@
 # config_manager/models/configuration.py
+#model
 from sqlalchemy import Table, Column, String, MetaData
 from . import metadata
 
