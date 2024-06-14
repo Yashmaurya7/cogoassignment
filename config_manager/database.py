@@ -1,4 +1,4 @@
-# config_manager/database.py
+
 import os
 from sqlalchemy import create_engine, MetaData
 from databases import Database
